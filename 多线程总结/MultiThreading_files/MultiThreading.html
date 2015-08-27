@@ -1,0 +1,131 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>MultiThreading</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="2ai3aeb5qcgo8erk2l2b5mr40s">MultiThreading</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="MultiThreading_files/images/MultiThreading.jpg"></div>
+<h2 class="topic">
+<a name="1rvgo3r2hr9vpl5ju5cb6noetq">线程实现</a>
+</h2>
+<h3 class="topic">
+<a name="2mlkal03j9di2g9i2638p9ndp3">&nbsp;匿名类</a>
+</h3>
+<h3 class="topic">
+<a name="4cpogab0ua3da45qm7qgpqm2qg">&nbsp;实现Runnable接口</a>
+</h3>
+<h3 class="topic">
+<a name="3888i0rgibs95b440h6mat3odf">&nbsp;继承Thread类</a>
+</h3>
+<h2 class="topic">
+<a name="747qknu2ad2mjaenhq24uqihnp">volatile</a>
+</h2>
+<h3 class="topic">
+<a name="3ksaq43i542o5qfkihgpjs0us8">&nbsp;该关键字修饰的字段 可以确保任何线程读取该字段时都是最近写入的值</a>
+</h3>
+<h2 class="topic">
+<a name="1ghoddkod9q58bempq98fvv775">锁对象</a>
+</h2>
+<h3 class="topic">
+<a name="28ktstsbtqim3gopd74b86062d">&nbsp;使用sychronized  多个方法时效率较低</a>
+</h3>
+<h3 class="topic">
+<a name="1d509006v8v180eev9252nkmlc">&nbsp;使用lock对象  较sychronized效率高</a>
+</h3>
+<h3 class="topic">
+<a name="1tgkhng6h88qf3b4tia7rtl8da">&nbsp;ReentrantLocks</a>
+</h3>
+<h2 class="topic">
+<a name="4qjpesabt4vhgoudrg8vuqfm93">线程池</a>
+</h2>
+<h3 class="topic">
+<a name="541a4q8ubi56otjnlm8fpf0mqe">&nbsp;JDK提供的线程池类</a>
+</h3>
+<h3 class="topic">
+<a name="0f2in7esgohtqke29td5rtn5v5">&nbsp;&nbsp;java.util.concurrent</a>
+</h3>
+<p class="topicImage">
+<img height="223" src="MultiThreading_files/17dkbffcnmf1bo74p21iki0r09.png" width="400"></p>
+<h2 class="topic">
+<a name="287ugbgl24fj5k57cut50sa0gc">countDownLatch</a>
+</h2>
+<h3 class="topic">
+<a name="0k1lrkg5ofuras3jr8rf7c1dfi">&nbsp;多个线程共享一个CountDownLatch实例，直到CountDownLatch实例声明的次数减为0。</a>
+</h3>
+<h3 class="topic">
+<a name="2ale8ed76qqnop8eeq6vlld5hv">&nbsp;典型例子是多个部门协同完成任务，Boss最后拍板</a>
+</h3>
+<h2 class="topic">
+<a name="15i2l6fkh6aodkkb38aqudhpap">ProducerConsumer</a>
+</h2>
+<h3 class="topic">
+<a name="4mbf867q163ipe87mg2vc98oab">&nbsp;使用BlockingQueue</a>
+</h3>
+<h3 class="topic">
+<a name="24appi3vrd0ov77rhglsdbahmv">&nbsp;&nbsp;BlockingQueue 线程安全</a>
+</h3>
+<h3 class="topic">
+<a name="6kbj69k81jtm6g01f5meqaaled">&nbsp;&nbsp;常用方法</a>
+</h3>
+<h3 class="topic">
+<a name="39ndd3mrr0hoqqn2ktu24ljf6r">&nbsp;&nbsp;&nbsp;put</a>
+</h3>
+<h3 class="topic">
+<a name="3enlr9v8f1pp61c1ctd6tfurup">&nbsp;&nbsp;&nbsp;take</a>
+</h3>
+<h3 class="topic">
+<a name="0kg99vjeo7bo6jnojor8v4e5ed">&nbsp;使用信号量</a>
+</h3>
+<h3 class="topic">
+<a name="20q4h8iqsjgcpb2lblrj7lfvk5">&nbsp;&nbsp;单个信号量</a>
+</h3>
+<h3 class="topic">
+<a name="7nfng5i860n26p28dkco8imv62">&nbsp;&nbsp;&nbsp;使用wait 和notify</a>
+</h3>
+<h3 class="topic">
+<a name="4j8jie7gotnlvned4kitj7qrpm">&nbsp;&nbsp;&nbsp;使用锁对象的await 和 signal</a>
+</h3>
+<h3 class="topic">
+<a name="0q88n5lj1prt6ib3e84l4bmdmk">&nbsp;&nbsp;&nbsp;Semaphore 资源为1</a>
+</h3>
+<h3 class="topic">
+<a name="1ol9vp2cqoao9efo83gci7qud6">&nbsp;&nbsp;多个信号量</a>
+</h3>
+<h3 class="topic">
+<a name="62dacr4qr5tmupukgf00u3clol">&nbsp;&nbsp;&nbsp;Semaphore</a>
+</h3>
+<h3 class="topic">
+<a name="4uic3of5m5n2tqlrbvii8sqe9k">&nbsp;&nbsp;&nbsp;&nbsp;acquire()</a>
+</h3>
+<h3 class="topic">
+<a name="5c6bmmr8ui7ko7s13otsbmcg83">&nbsp;&nbsp;&nbsp;&nbsp;release()</a>
+</h3>
+<h2 class="topic">
+<a name="27j60mml1ffj7v863rpaulot2u">CallableAndFuture</a>
+</h2>
+<h3 class="topic">
+<a name="49kuv2rv0b0njuu5jvp30cl083">&nbsp;Callable</a>
+</h3>
+<h3 class="topic">
+<a name="19is2tneudmsrmom7u0sfkgqt2">&nbsp;&nbsp;Callable和Runnable的区别</a>
+</h3>
+<h3 class="topic">
+<a name="5i3gc8dbbfqupfber2pp1nbp6j">&nbsp;&nbsp;&nbsp;Runnable 引入在JDK1.0 Callable&lt;T&gt;引入在JDK1.5</a>
+</h3>
+<h3 class="topic">
+<a name="3berchkiiddj9n48ihii00h4dj">&nbsp;&nbsp;&nbsp;Callable 待参数回调可以和Future配合使用</a>
+</h3>
+<h3 class="topic">
+<a name="11c182rmo4pcpoe4js7amjfc7k">&nbsp;Future</a>
+</h3>
+<h3 class="topic">
+<a name="19vvmn6akdg9gjnbji8vrqc76f">&nbsp;&nbsp;Future允许你控制线程和查看线程状态</a>
+</h3>
+</body>
+</html>
